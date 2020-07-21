@@ -1,2 +1,45 @@
 @import "reset";
-//! Common Styles
+
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
+}
+
+//! Container
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+//! Header Styles
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+
+    .brand-logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.25em;
+
+        .brand-logo-name {
+            margin-left: 1rem;
+        }
+    }
+
+    .main-nav {
+        ul {
+            display: flex;
+
+            a {
+                font-size: 0.9em;
+                padding-left: 1.5rem;
+                &:hover {
+                    color: #adadad;
+                }
+            }
+        }
+    }
+}
