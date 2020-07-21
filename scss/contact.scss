@@ -1,0 +1,60 @@
+.join-main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    .join-text {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    .join-form {
+        background-color: #202027;
+        width: 50vw;
+        max-width: 50%;
+        padding: 2rem 4rem;
+        border-radius: 1.2rem;
+
+        .input-group {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            label {
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            input {
+                outline: none;
+                background: none;
+                border: 1px solid #2e3852;
+                font-size: 1em;
+                padding: 0.5em;
+                border-radius: 10px;
+
+                &:focus {
+                    border: 2px solid #2367a6;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .join-main-section {
+        flex-direction: column;
+        justify-content: center;
+
+        .join-form {
+            width: 80vw;
+            margin: 2rem 0;
+            max-width: inherit;
+        }
+    }
+}
