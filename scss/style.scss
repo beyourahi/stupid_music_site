@@ -10,6 +10,7 @@
     max-width: 75rem;
     margin: 0 auto;
     padding: 0 40px;
+    flex-grow: 1;
 }
 
 //! Header Styles
@@ -44,7 +45,7 @@
     }
 }
 
-//! CTA
+//! CTA Styles
 .title {
     font-weight: 500;
     font-size: 2.5em;
@@ -69,5 +70,42 @@
 
     &:focus {
         background-color: #2796ff;
+    }
+}
+
+//!  Footer Styles
+.main-footer {
+    background-color: #202027;
+    height: 4.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-nav {
+        ul {
+            display: flex;
+
+            a {
+                font-size: 0.9em;
+                padding-left: 1.5rem;
+
+                &:hover {
+                    color: #adadad;
+                }
+            }
+
+            .social-link {
+                img {
+                    width: 0.9em;
+                    margin-right: .25rem;
+                }
+            }
+        }
     }
 }
